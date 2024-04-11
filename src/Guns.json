@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "name": "Glock 17 GEN5 FS 9MM",
+    "imageURL": "https://guntech.ph/wp-content/uploads/2020/07/Glock-19-Gen5-MOS-FS-728px.png",
+    "Description": "G17 Gen5 – The newest generation of the original. The new frame design of the GLOCK 17 Gen5 removed the finger grooves for more versatility but still allows to easily customize its grip by using the different back straps. A flared mag-well gives the user more speed during reloading when fractions of a second matter. A reversible enlarged magazine catch, changeable at user level as well as the ambidextrous slide stop lever accommodate left and right-handed operators. The rifling and the crown of the barrel were slightly modified for increased precision.",
+    "Weight": "711g / 25.08oz",
+    "Height": "139mm / 5.47 in",
+    "Calibre": "9mm",
+    "Dimensions": "202 x 138mm",
+    "Mag. Capacity": "Standard: 17 Rounds",
+    "Length": "202mm / 7.95 in",
+    "Barrel Length": "114mm / 4.49in"
+  },
+  {
+    "id": 2,
+    "name": "Beretta",
+    "imageURL": "https://www.pvas.no/image/vaapen/haandvaapen/sc151017-white-92-x-performance.jpg?v=637304026768430000"
+  },
+  {
+    "id": 3,
+    "name": "1911",
+    "imageURL": "https://trusttrade.com.ph/wp-content/uploads/2023/02/Springfield-Garrison_45_5inch_PX9420S_L-728px.png"
+  }
+]
