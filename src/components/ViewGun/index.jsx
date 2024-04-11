@@ -2,6 +2,7 @@ import { styled } from '@mui/material/styles'
 import Box from '@mui/material/Box'
 import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
+import PropTypes from 'prop-types'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -11,39 +12,46 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }))
 
-export default function ViewGun() {
+export default function ViewGun({ selectedGun }) {
+  console.log(selectedGun)
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
         <Grid item xs={8}>
-          <Item>Gun Image</Item>
+          <Item>
+            <img src={selectedGun?.imageURL} alt={selectedGun?.name} />
+          </Item>
         </Grid>
         <Grid item xs={4}>
-          <Item>Gun Name</Item>
-          <Item>Gun Description</Item>
+          <Item>{selectedGun?.name}</Item>
+          <Item>{selectedGun?.Description}</Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>Weight</Item>
+          <Item>{selectedGun?.Weight}</Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>Height</Item>
+          <Item>{selectedGun?.Height}</Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>Calibre</Item>
+          <Item>{selectedGun?.Calibre}</Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>Dimension</Item>
+          <Item>{selectedGun?.Dimensions}</Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>Mag. Capacity</Item>
+          <Item>{selectedGun?.MagazineCapacity}</Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>Length</Item>
+          <Item>{selectedGun?.Length}</Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>Barrel Length</Item>
+          <Item>{selectedGun?.BarrelLength}</Item>
         </Grid>
       </Grid>
     </Box>
   )
+}
+
+ViewGun.propTypes = {
+  selectedGun: PropTypes.object,
 }

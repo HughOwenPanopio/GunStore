@@ -14,17 +14,27 @@ const GunContainerStyles = {
   cursor: 'pointer',
 }
 
-function FeaturedGuns() {
+function FeaturedGuns({ onSelection, selectedGun }) {
   return (
     <div>
       <h1>Featured Guns</h1>
       <div style={GunContainerStyles}>
         {Guns.map((gun) => (
-          <Gun key={gun.id} name={gun.name} image={gun.imageURL} />
+          <Gun
+            key={gun.id}
+            gun={gun}
+            onSelection={onSelection}
+            selectedGun={selectedGun}
+          />
         ))}
       </div>
     </div>
   )
+}
+
+FeaturedGuns.propTypes = {
+  onSelection: PropTypes.func,
+  selectedGun: PropTypes.object,
 }
 
 export default FeaturedGuns
@@ -33,19 +43,28 @@ const gunStyle = {
   textAlign: 'center',
 }
 
-function Gun({ name, image }) {
+function Gun({ gun, onSelection, selectedGun }) {
+  const isSelected = selectedGun?.id === gun.id
+
   return (
     <>
       <div style={gunStyle}>
-        <img src={image} alt={name} style={{ width: '100%', height: 'auto' }} />
-        <h3>{name}</h3>
-        <Button>View Item</Button>
+        <img
+          src={gun.imageURL}
+          alt={gun.name}
+          style={{ width: '100%', height: 'auto' }}
+        />
+        <h3>{gun.name}</h3>
+        <Button type="button" onClick={() => onSelection(gun)}>
+          View Item
+        </Button>
       </div>
     </>
   )
 }
 
 Gun.propTypes = {
-  name: PropTypes.string,
-  image: PropTypes.string,
+  gun: PropTypes.object,
+  onSelection: PropTypes.func,
+  selectedGun: PropTypes.object,
 }

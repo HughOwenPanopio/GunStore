@@ -10,16 +10,19 @@ const buttonStyle = {
   width: '70%',
 }
 
-function Button({ children }) {
+function Button({ children, onClick }) {
   return (
     <>
-      <button style={buttonStyle}>{children}</button>
+      <button style={buttonStyle} type="submit" onClick={onClick}>
+        {children}
+      </button>
     </>
   )
 }
 
 Button.propTypes = {
   children: PropTypes.node,
+  onClick: PropTypes.func,
 }
 
 export default Button

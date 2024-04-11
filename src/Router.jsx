@@ -7,6 +7,7 @@ import {
 import HomePage from './components/HomePage'
 import Brands from './components/Brands'
 import App from './App'
+import ViewGun from './components/ViewGun'
 
 function Router() {
   const router = createBrowserRouter(
@@ -14,6 +15,7 @@ function Router() {
       <Route path="/" element={<App />}>
         <Route path="/" element={<HomePage />} />
         <Route path="brands" element={<Brands />} />
+        <Route path="view" element={<ViewGun />} />
       </Route>
     )
   )
