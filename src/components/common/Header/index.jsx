@@ -65,6 +65,7 @@ const headerMenu = {
   alignItems: 'center',
   justifyContent: 'center',
   textTransform: 'uppercase',
+  margin: '0 auto',
 }
 
 // Wrapper component that accepts a function and state as props
@@ -83,9 +84,11 @@ function Header() {
         style={{
           position: 'fixed',
           top: 0,
-          width: '105%',
-          marginLeft: '-11rem',
+          width: '100%',
           zIndex: 1,
+          left: 0,
+          right: 0,
+          margin: '0 auto',
         }}
       >
         <Box backgroundColor={bgColor}>
