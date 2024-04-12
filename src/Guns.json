@@ -1,25 +1,41 @@
 [
   {
     "id": 1,
+    "brand": "Glock",
     "name": "Glock 17 GEN5 FS 9MM",
     "imageURL": "https://guntech.ph/wp-content/uploads/2020/07/Glock-19-Gen5-MOS-FS-728px.png",
-    "Description": "G17 Gen5 – The newest generation of the original. The new frame design of the GLOCK 17 Gen5 removed the finger grooves for more versatility but still allows to easily customize its grip by using the different back straps. A flared mag-well gives the user more speed during reloading when fractions of a second matter. A reversible enlarged magazine catch, changeable at user level as well as the ambidextrous slide stop lever accommodate left and right-handed operators. The rifling and the crown of the barrel were slightly modified for increased precision.",
-    "Weight": "711g / 25.08oz",
-    "Height": "139mm / 5.47 in",
-    "Calibre": "9mm",
-    "Dimensions": "202 x 138mm",
-    "MagazineCapacity": "Standard: 17 Rounds",
-    "Length": "202mm / 7.95 in",
-    "BarrelLength": "114mm / 4.49in"
+    "description": "G17 Gen5 – The newest generation of the original. The new frame design of the GLOCK 17 Gen5 removed the finger grooves for more versatility but still allows to easily customize its grip by using the different back straps. A flared mag-well gives the user more speed during reloading when fractions of a second matter. A reversible enlarged magazine catch, changeable at user level as well as the ambidextrous slide stop lever accommodate left and right-handed operators. The rifling and the crown of the barrel were slightly modified for increased precision.",
+    "weight": "711g / 25.08oz",
+    "height": "139mm / 5.47 in",
+    "caliber": "9mm",
+    "magazineCapacity": "Standard: 17 Rounds",
+    "length": "202mm / 7.95 in",
+    "barrelLength": "114mm / 4.49in"
   },
   {
     "id": 2,
-    "name": "Beretta",
-    "imageURL": "https://www.pvas.no/image/vaapen/haandvaapen/sc151017-white-92-x-performance.jpg?v=637304026768430000"
+    "brand": "Beretta",
+    "name": "Beretta 92FS",
+    "imageURL": "https://firepower.ph/cdn/shop/products/92fs_zoom002.jpg?v=1544441687",
+    "description": "US Military contract--check. Renewed US Military contract after demanding campaigns in the world's toughest environments--check. Find out what makes the 92FS the world's most reliable pistol, as well as a favorite self- and home-defense semiauto.",
+    "weight": "33.3 oz",
+    "height": "5.4 in",
+    "caliber": "9mm",
+    "magazineCapacity": "Standard: 15 Rounds",
+    "length": "8.5 in",
+    "barrelLength": "4.9in"
   },
   {
     "id": 3,
-    "name": "1911",
-    "imageURL": "https://trusttrade.com.ph/wp-content/uploads/2023/02/Springfield-Garrison_45_5inch_PX9420S_L-728px.png"
+    "brand": "Springfield Armoury",
+    "name": "Springfield Garrison 1911",
+    "imageURL": "https://trusttrade.com.ph/wp-content/uploads/2023/02/Springfield-Garrison_45_5inch_PX9420S_L-728px.png",
+    "description": "The Garrison in stainless steel takes the proven 1911 design and combines heirloom-quality construction with the modern features today’s shooters demand. The result is a rock-solid 1911 with forged, rust-resistant stainless steel construction, modern upgrades and the strength to provide a lifetime of service. For those who respect tradition and demand the best, the Garrison stands ready.",
+    "weight": "37 oz",
+    "height": "5.5 in",
+    "caliber": "45 ACP",
+    "magazineCapacity": "Standard: 7 Rounds",
+    "length": "8.6 in",
+    "barrelLength": "5in"
   }
 ]

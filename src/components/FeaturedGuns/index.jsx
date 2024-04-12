@@ -1,4 +1,3 @@
-import Guns from '../../Guns.json'
 import PropTypes from 'prop-types'
 import Button from '../Button'
 
@@ -14,12 +13,14 @@ const GunContainerStyles = {
   cursor: 'pointer',
 }
 
-function FeaturedGuns({ onSelection, selectedGun }) {
+function FeaturedGuns({ onSelection, selectedGun, addGun }) {
+  if (!addGun) return null
+
   return (
     <div>
       <h1>Featured Guns</h1>
       <div style={GunContainerStyles}>
-        {Guns.map((gun) => (
+        {addGun.map((gun) => (
           <Gun
             key={gun.id}
             gun={gun}
@@ -35,6 +36,7 @@ function FeaturedGuns({ onSelection, selectedGun }) {
 FeaturedGuns.propTypes = {
   onSelection: PropTypes.func,
   selectedGun: PropTypes.object,
+  addGun: PropTypes.array,
 }
 
 export default FeaturedGuns

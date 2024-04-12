@@ -3,6 +3,8 @@ import Box from '@mui/material/Box'
 import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
 import PropTypes from 'prop-types'
+import Typography from '@mui/material/Typography'
+import './style.css'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -23,29 +25,70 @@ export default function ViewGun({ selectedGun }) {
           </Item>
         </Grid>
         <Grid item xs={4}>
-          <Item>{selectedGun?.name}</Item>
-          <Item>{selectedGun?.Description}</Item>
+          <Box sx={{ display: 'flex' }}>
+            <Item>
+              <Typography variant="h6">
+                <span>Name: </span>
+                {selectedGun?.name}
+              </Typography>
+            </Item>
+          </Box>
+          <Box>
+            <Item>
+              <Typography variant="h6" textAlign="start">
+                <span>Description: </span>
+                {selectedGun?.description}
+              </Typography>
+            </Item>
+          </Box>
         </Grid>
         <Grid item xs={6}>
-          <Item>{selectedGun?.Weight}</Item>
+          <Item>
+            <Typography variant="h6">
+              <span>Weight: </span>
+              {selectedGun?.weight}
+            </Typography>
+          </Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>{selectedGun?.Height}</Item>
+          <Item>
+            <Typography variant="h6">
+              <span>Height: </span>
+              {selectedGun?.height}
+            </Typography>
+          </Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>{selectedGun?.Calibre}</Item>
+          <Item>
+            <Typography variant="h6">
+              <span>Caliber: </span>
+              {selectedGun?.caliber}
+            </Typography>
+          </Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>{selectedGun?.Dimensions}</Item>
+          <Item>
+            <Typography variant="h6">
+              <span>Magazine Capacity: </span>
+              {selectedGun?.magazineCapacity}
+            </Typography>
+          </Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>{selectedGun?.MagazineCapacity}</Item>
+          <Item>
+            <Typography variant="h6">
+              <span>Length: </span>
+              {selectedGun?.length}
+            </Typography>
+          </Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>{selectedGun?.Length}</Item>
-        </Grid>
-        <Grid item xs={6}>
-          <Item>{selectedGun?.BarrelLength}</Item>
+          <Item>
+            <Typography variant="h6">
+              <span>Barrel Length: </span>
+              {selectedGun?.barrelLength}
+            </Typography>
+          </Item>
         </Grid>
       </Grid>
     </Box>
