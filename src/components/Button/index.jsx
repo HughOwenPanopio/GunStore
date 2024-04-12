@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-function Button({ children, onClick }) {
+function Button({ children, onClick, width }) {
   const buttonStyle = {
     backgroundColor: '#222831',
     color: '#FFF',
@@ -8,7 +8,8 @@ function Button({ children, onClick }) {
     borderRadius: '50px',
     fontSize: '15px',
     textTransform: 'uppercase',
-    width: '70%',
+    width: width ? width : '70%',
+    cursor: 'pointer',
   }
 
   return (

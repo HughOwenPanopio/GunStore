@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import Button from '../Button'
+import GunCard from '../GunCard'
 
 const GunContainerStyles = {
   display: 'flex',
@@ -21,7 +21,7 @@ function FeaturedGuns({ onSelection, selectedGun, addGun }) {
       <h1>Featured Guns</h1>
       <div style={GunContainerStyles}>
         {addGun.map((gun) => (
-          <Gun
+          <GunCard
             key={gun.id}
             gun={gun}
             onSelection={onSelection}
@@ -40,33 +40,3 @@ FeaturedGuns.propTypes = {
 }
 
 export default FeaturedGuns
-
-const gunStyle = {
-  textAlign: 'center',
-}
-
-function Gun({ gun, onSelection, selectedGun }) {
-  const isSelected = selectedGun?.id === gun.id
-
-  return (
-    <>
-      <div style={gunStyle}>
-        <img
-          src={gun.imageURL}
-          alt={gun.name}
-          style={{ width: '100%', height: 'auto' }}
-        />
-        <h3>{gun.name}</h3>
-        <Button type="button" onClick={() => onSelection(gun)}>
-          View Item
-        </Button>
-      </div>
-    </>
-  )
-}
-
-Gun.propTypes = {
-  gun: PropTypes.object,
-  onSelection: PropTypes.func,
-  selectedGun: PropTypes.object,
-}

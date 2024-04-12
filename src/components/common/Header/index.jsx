@@ -85,6 +85,7 @@ function Header() {
           top: 0,
           width: '105%',
           marginLeft: '-11rem',
+          zIndex: 1,
         }}
       >
         <Box backgroundColor={bgColor}>

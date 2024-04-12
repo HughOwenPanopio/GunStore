@@ -17,7 +17,16 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function ViewGun({ selectedGun }) {
   console.log(selectedGun)
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box
+      sx={{
+        flexGrow: 1,
+        border: '3px solid',
+        borderRadius: '20px',
+        padding: '2rem',
+        boxShadow: '5px 4px 6px rgba(0, 0, 0, 0.3)',
+        margin: '2rem auto',
+      }}
+    >
       <Grid container spacing={2}>
         <Grid item xs={8}>
           <Item>
